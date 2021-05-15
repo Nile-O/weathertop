@@ -10,6 +10,7 @@ POST   /register                                Accounts.register
 POST   /authenticate                            Accounts.authenticate
 GET    /logout                                  Accounts.logout
 GET     /dashboard                              Dashboard.index
+GET     /dashboard/deletestation/{id}           Dashboard.deleteStation
 GET     /about                                  About.index
 GET     /stations/{id}                          StationCtrl.index
 GET     /stations/{id}/deletereading/{readingid} StationCtrl.deleteReading
