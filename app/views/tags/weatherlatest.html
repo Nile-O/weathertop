@@ -2,20 +2,20 @@
 <div class="ui five cards">
     <div class="card" style="background-color:#4183c4;">
         <h3>${_stations.name}</h3>
-        <em data-emoji=":compass:"></em>
+        <em class="big" data-emoji=":compass:"></em>
         <br>
         Lat: ${_stations.latitude}<br>
         Lng: ${_stations.longitude}
     </div>
     <div class="card" style="background-color:#4183c4;">
         <h3>Weather</h3>
-        <em data-emoji=":white_sun_small_cloud:"></em>
+        <em class="big" data-emoji=":white_sun_small_cloud:"></em>
         <br>
         ${_stations.weatherCode}
     </div>
     <div class="card" style="background-color:#4183c4;">
         <h3>Temp</h3>
-        <em data-emoji=":thermometer:"></em>
+        <em class="big" data-emoji=":thermometer:"></em>
         <br>
         ${_stations.latestTemp}C <br>
         ${_stations.latestFTemp} F
@@ -25,7 +25,7 @@
         Min: ${_stations.minTemp}
     </div>
     <div class="card" style="background-color:#4183c4;">
-        <h3>Wind</h3> <i class="wind icon"></i><br>
+        <h3>Wind</h3> <i class="massive wind icon"></i><br>
         ${_stations.latestWind}bft <br>
         ${_stations.windCompass} <br>
         Feels like <br>
@@ -37,7 +37,7 @@
     </div>
     <div class="card" style="background-color:#4183c4;">
         <h3>Pressure</h3>
-        <em data-emoji=":cloud:"></em><em data-emoji=":wavy_dash:"></em><em data-emoji=":wavy_dash:"></em>
+        <em class="big" data-emoji=":wavy_dash:"></em><em class="big" data-emoji=":wavy_dash:"></em>
         <br>
         ${_stations.latestPressure}hpa
         <br>
@@ -46,3 +46,4 @@
         Min: ${_stations.minPressure}
     </div>
 </div>
+
