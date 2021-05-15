@@ -5,9 +5,7 @@
 #{list items:stations, as:'station'}
 
 <section class="ui segment">
-    <h2 class="ui header">
-        ${station.name}
-    </h2>
+    #{weatherlatest stations:station/}
     <a href="/stations/${station.id}"><i class="folder open outline icon"></i></a>
 </section>
 #{/list}
