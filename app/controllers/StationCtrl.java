@@ -6,7 +6,7 @@ import models.Station;
 import models.Reading;
 
 import java.lang.Math;
-
+import java.util.Date;
 import java.util.List;
 import static models.Reading.windText;
 import static models.Reading.weatherText;
@@ -55,6 +55,7 @@ public class StationCtrl extends Controller
 
                 a.minPressure = getMinPressure(a.readings);
 
+
             }
         }
 
@@ -64,7 +65,8 @@ public class StationCtrl extends Controller
 
     public static void addReading(Long id, int code, double temperature, double windSpeed, int pressure, double windDirection)
     {
-        Reading reading = new Reading(code, temperature, windSpeed, pressure, windDirection);
+        Date date = new Date();
+        Reading reading = new Reading(date, code, temperature, windSpeed, pressure, windDirection);
         Station station = Station.findById(id);
         station.readings.add(reading);
         station.save();

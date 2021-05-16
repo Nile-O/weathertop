@@ -1,6 +1,7 @@
 <table class="ui fixed table">
     <thead>
     <tr>
+        <th>Date & Time</th>
         <th>Code</th>
         <th>Temp</th>
         <th>Wind Speed</th>
@@ -12,6 +13,7 @@
     <tbody>
     #{list items:_stations.readings, as:'reading'}
     <tr>
+        <td>${reading.date}</td>
         <td>
             ${reading.code}
         </td>
