@@ -62,7 +62,7 @@ public class StationCtrl extends Controller
         render("station.html", station, stations);
     }
 
-    public static void addReading(Long id, int code, double temperature, double windSpeed, int pressure, int windDirection)
+    public static void addReading(Long id, int code, double temperature, double windSpeed, int pressure, double windDirection)
     {
         Reading reading = new Reading(code, temperature, windSpeed, pressure, windDirection);
         Station station = Station.findById(id);
@@ -79,6 +79,7 @@ public class StationCtrl extends Controller
         station.readings.remove(reading);
         station.save();
         reading.delete();
+
         render("station.html", station);
     }
 }
