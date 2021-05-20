@@ -11,10 +11,10 @@ https://github.com/fomantic/Fomantic-UI
  * http://fomantic-ui.com/
 
   
-In this version of the app the weather Code, Temperature, Wind speed, Pressure and Wind Direction can be read in and displayed. 
+In this version of the app the weather Code, Temperature, Wind speed, Pressure and Wind Direction can be read in and displayed with a date and time stamp. 
 
 The station name, latitiude and longitude, latest weather, temperature in C/F, Wind in Bft, Pressure, wind chill, wind compass as well as the maximum and minimum temperature, wind and pressure can all be calculated and viewed. 
 
 Members are able to signup by adding their first name, last name, email address, password and own stations.
 
-Members can sign up and login to the app. Members can create their own stations as well as view pre-loaded staions from the YAML file. The dashboard displays a list of stations with a button to open the stations and view the readings. It is also possible to add new stations and new readings.
+Members can sign up and login to the app. Members can create their own stations as well as view pre-loaded staions from the YAML file. The dashboard displays a list of stations with a button to open the stations and view the readings. It is also possible to add new stations and new readings and to delete stations or readings. A latest weather display is visible on the stations page as well as the dashboard page.
