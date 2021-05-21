@@ -4,6 +4,7 @@ import models.Station;
 import play.Logger;
 import play.mvc.Controller;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -15,6 +16,7 @@ public class Dashboard extends Controller {
     Logger.info("Rendering Dashboard");
     Member member = Accounts.getLoggedInMember();
     List<Station> stations = member.stations;
+    stations.sort(Comparator.comparing(Station::getName));
     for(Station a : stations) {
       if(a.readings.size() !=0) {
         a.weatherCode = weatherText(a.readings.get(a.readings.size() - 1).code);
